@@ -4,15 +4,15 @@ body {
     text-align: center;
 }
 h1 {
-    color: #2d4d2e;
+    color: #78b87a;
     font-family: 'Courier';
-    font-size: 100px; 
-    font-weight: 700;
+    font-size: 80px; 
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
 .my-button {
-    background-color: #2d4d2e;
+    background-color: #78b87a;
     border: none;
     color: #f1b2c6;
     padding: 15px 32px;
@@ -20,9 +20,9 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-family: 'Courier';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 6px;
 }
