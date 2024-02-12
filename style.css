@@ -1,26 +1,27 @@
 body { 
     margin: 0;
-    background: #f1b2c6;
+    background: #e9c8d2;
     text-align: center;
 }
 h1 {
+    color: #2d4d2e;
     font-family: 'Courier';
-    color: #6bad6c;
+    font-size: 100px; 
     font-weight: 700;
-    font-size: 70px;
     margin-bottom: 12px;
 }
 
 .my-button {
-    background-color: #6bad6c;
+    background-color: #2d4d2e;
     border: none;
     color: #f1b2c6;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     font-family: 'Courier';
+    font-size: 25px;
+    font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
