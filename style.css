@@ -3,15 +3,30 @@ body {
     background: #e9c8d2;
     text-align: center;
 }
+
+.container {
+    display: inline-block;
+}
+
 h1 {
     color: #78b87a;
     font-family: 'Courier';
     font-size: 80px; 
     font-weight: 600;
     margin-bottom: 12px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 5s steps,
+        cursor .4s step-end infinite alternate;
 }
 
-.my-button {
+@keyframes typing {
+    from { width: 0 }
+}
+
+.yes-button {
     background-color: #78b87a;
     border: none;
     color: #f1b2c6;
@@ -24,5 +39,34 @@ h1 {
     font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 30px;
+}
+
+.yes-button:hover {
+    background-color: #7c9c7d;
+}
+
+.yes-button:active {
+    color: #78b87a;
+    background-color: #f1b2c6;
+}
+
+.no-button {
+    background-color: #78b87a;
+    border: none;
+    color: #f1b2c6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Courier';
+    font-size: 30px;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.no-button:hover {
+    opacity: 0;
 }
