@@ -19,8 +19,65 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     animation:
-        typing 5s steps(25),
+        typing 4s,
         cursor .4s step-end infinite alternate;
+}
+
+h2 {
+    color: #78b87a;
+    font-family: 'Courier';
+    font-size: 80px; 
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s,
+        cursor .4s step-end infinite alternate;
+}
+
+h3 {
+    color: #78b87a;
+    font-family: 'Courier';
+    font-size: 80px; 
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 4s,
+    cursor .4s step-end infinite alternate;
+}
+
+.transitioning-text {
+    transition: opacity 4s ease-in;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+p {
+    color: #78b87a;
+    font-family: 'Courier';
+    font-size: 40px; 
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.centered-image {
+    color: #78b87a;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 10px auto;
+    border: 10px solid;
+    border-radius: 30px;
 }
 
 .yes-button {
@@ -37,6 +94,7 @@ h1 {
     cursor: pointer;
     border: 10px solid;
     border-radius: 30px;
+    box-shadow: 1px 1px 2px #d893a9;
 }
 
 .yes-button:hover {
@@ -62,12 +120,13 @@ h1 {
     cursor: default;
     border: 10px solid;
     border-radius: 30px;
+    box-shadow: 1px 1px 2px #d893a9;
+    transition: opacity 0.5s
 }
 
 .no-button:hover {
     opacity: 0;
 }
-
 
 @keyframes typing {
     from { width: 0 }

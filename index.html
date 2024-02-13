@@ -11,11 +11,23 @@
   
   <body>
     <div class="container">
-        <h1>Will you be my valentine?</h1>
-
-        <button class="yes-button">Yes</button>
-        <button class="no-button">No</button>
-    
+      <h2>Will you be my valentine?</h2>
+      <div class="image-container">
+        <img id="please-cat" src="please-cat.gif" alt="" class="centered-image">
+        <div class="button-container">
+          <button id="yes-button" class="yes-button" 
+            onclick="location.href='yes.html'">Yes</button>
+          <button id="no-button" class="no-button" 
+            onmouseover="changeGif('cat-slap.gif')" 
+            onmouseleave="changeGif('please-cat.gif')">No</button>
+        </div> 
+      </div>
     </div>
+
+    <script>
+        function changeGif(url) {
+          document.getElementById('please-cat').src = url;
+        }
+    </script>
   </body>
 </html>
