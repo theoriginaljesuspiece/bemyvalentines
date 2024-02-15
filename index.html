@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question for her...</title>
     <link rel="stylesheet" href="style.css">
-
   </head>
-  
   <body>
     <div class="container">
-      <h2>Will you be my valentine?</h2>
-      <div class="image-container">
-        <img id="please-cat" src="please-cat.gif" alt="" class="centered-image">
-        <div class="button-container">
-          <button id="yes-button" class="yes-button" 
-            onclick="location.href='yes.html'">Yes</button>
-          <button id="no-button" class="no-button" 
-            onmouseover="changeGif('cat-slap.gif')" 
-            onmouseleave="changeGif('please-cat.gif')">No</button>
-        </div> 
-      </div>
+      <h2>Date night with me?</h2>
+      <img id="please-cat" src="please-cat.gif" alt="" class="centered-image">
+      <button id="yes-button" class="yes-button" 
+        onclick="location.href='yes.html'">Yes</button>
+      <button id="no-button" class="no-button" 
+        onmouseover="changeGif('cat-slap.gif')" 
+        onmouseleave="changeGif('please-cat.gif')">No</button>
+      </div> 
     </div>
-
     <script>
         function changeGif(url) {
           document.getElementById('please-cat').src = url;
