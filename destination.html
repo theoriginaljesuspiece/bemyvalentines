@@ -4,18 +4,157 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Date night</title>
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <style>
+            body { 
+                margin: 0;
+                background: #e9c8d2;
+                place-content: center;
+                text-align: center;
+            }
+            h1 {
+                color: #58865a;
+                font-family: 'Courier';
+                font-size: 80px; 
+                font-weight: 600;
+                margin: 10px auto;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                animation:
+                typing 4s,
+                cursor .4s step-end infinite alternate;
+            }
+            p {
+                color: #58865a;
+                font-family: 'Courier';
+                font-size: 40px; 
+                font-weight: 600;
+                margin: 10px auto;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .container {
+                display: inline-block;
+            }
+            .fade-in-text1 {
+                opacity: 0;
+                animation: fadeIn 4s forwards;
+                animation-delay: 3s;
+            }
+            .animation-text2 {
+                opacity: 0;
+                animation: fadeIn 4s forwards, typing 5s forwards;
+                animation-delay: 7s;
+            }
+            .fade-in-image {
+                color: #58865a;
+                display: block;
+                margin: 15px auto;
+                border: 10px solid;
+                border-radius: 30px;
+                opacity: 0;
+                animation: fadeIn 4s forwards;
+                animation-delay: 5s;
+            }
+            .fade-in-image2 {
+                color: #58865a;
+                width: 400px;
+                height: 400px;
+                display: inline-block;
+                margin: 10px auto;
+                border: 10px solid;
+                border-radius: 30px;
+                opacity: 0;
+                animation: fadeIn 4s forwards;
+                animation-delay: 9s;
+            }
+            .fade-in-image3 {
+                color: #58865a;
+                width: 400px;
+                height: 400px;
+                display: inline-block;
+                margin: 10px auto;
+                border: 10px solid;
+                border-radius: 30px;
+                opacity: 0;
+                animation: fadeIn 4s forwards;
+                animation-delay: 11s;
+            }
+            .surprise-button {
+                color: #f1b2c6;
+                background-color: #58865a;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                font-family: 'Courier';
+                font-size: 30px;
+                font-weight: 700;
+                margin: 10px auto;
+                cursor: pointer;
+                border: 10px solid;
+                border-radius: 30px;
+                box-shadow: 1px 1px 2px #d893a9;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                -webkit-animation-iteration-count: white;
+            }
+
+            .surprise-button:hover {
+                cursor: pointer;
+                animation-name: bounce;
+                -moz-animation-name: bounce;
+            }
+
+            .surprise-button:active {
+                color: #58865a;
+                background-color: #f1b2c6;
+            }
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            @keyframes bounce {
+                0%, 100%, 20%, 50%, 80% {
+                    -webkit-transform: translateY(0);
+                    -ms-transform:     translateY(0);
+                    transform:         translateY(0)
+                }
+                40% {
+                    -webkit-transform: translateY(-30px);
+                    -ms-transform:     translateY(-30px);
+                    transform:         translateY(-30px)
+                }
+                60% {
+                    -webkit-transform: translateY(-15px);
+                    -ms-transform:     translateY(-15px);
+                    transform:         translateY(-15px)
+                }
+            }
+
+        </style>
     </head>
     <body>
         <div class="container">
-            <h3 id="text1">Date night destination</h3>
+            <h1 id="text1">Date night destination</h1>
             <p id="text2" class="fade-in-text1">BAMBINI TRUST @ 8:00PM</p>
             <img id="resturant" class="fade-in-image" src="bambini-trust.jpg" alt="">
             <p id="text3" class="animation-text2">We will be indulging in...</p>
             <img id="pasta" class="fade-in-image2" src="pasta.gif" alt="">
             <img id="wine" class="fade-in-image3" src="wine.gif" alt="">
             <button id="surpise-button" class="surprise-button"
-                onclick="location.href='smooch.html'">ANNNDDDD</button>
+                onclick="location.href='smooch.html'">AND MAYBE...</button>
         </div>
     </body>
 </html>
